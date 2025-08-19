@@ -1,21 +1,55 @@
-# React + TypeScript + Vite
+# PopChoice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Scrimba-inspired project built with **React + Vite**, **Supabase**, **Cloudflare Workers**, **Vercel**, **SCSS Modules**, **Figma**, the **TMDB API**, and the **OpenAI API**. PopChoice helps users create and vote on movie suggestions, surfaces trending picks, and—optionally—uses AI to summarize community sentiment about films.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+---
 
-## Deploy Your Own
+## ✨ Features
 
-Deploy your own Vite project with Vercel.
+- Suggest movies
+- Real-time updates backed by Supabase
+- Movie metadata fetched from **TMDB API** (posters, descriptions, ratings)
+- Cloudflare Worker API for secure server-side actions
+- AI summaries via OpenAI
+- Fast, modern UI with React + Vite and SCSS Modules
+- Flexible deployment with **Vercel** for frontend hosting
+- **Figma** for design collaboration and UI prototyping
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+---
 
-_Live Example: https://vite-react-example.vercel.app_
+## 🧰 Tech Stack
 
-### Deploying From Your Terminal
+- **Frontend:** React 18, Vite, TypeScript, SCSS Modules
+- **Hosting:** Vercel
+- **Backend:** Cloudflare Workers (Wrangler)
+- **Database/Auth:** Supabase (Postgres + Row Level Security)
+- **APIs:** TMDB API (movie data), OpenAI API (summaries / recommendations)
+- **Design:** Figma
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+---
 
-```shell
-$ vercel
-```
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Node.js** 18+ (LTS recommended)
+- **npm** 9+ (or **pnpm**/**yarn**)
+- A **Supabase** project (free tier ok)
+- A **Cloudflare** account with **Wrangler** CLI
+- A **Vercel** account (for frontend deployment)
+- A **TMDB** API key (for movie metadata)
+- **OpenAI** account + API key
+- **Figma** account (for accessing design files)
+
+## 🎯 Stretch Goals
+
+- Support **multiple user feedback** on each movie suggestion
+- Compare and contrast feedback to surface the **best recommendation**
+- Enhanced AI summaries that highlight **community consensus**
+
+---
+
+## 🙏 Acknowledgements
+
+- Built as part of the **Scrimba** curriculum/project
+- Thanks to Supabase, Cloudflare Workers, Vercel, Figma, TMDB, and OpenAI for awesome tooling
