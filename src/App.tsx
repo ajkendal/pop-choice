@@ -7,7 +7,6 @@ function App() {
     <div className={styles['container']}>
       <Header />
       <Questions />
-      <h1>Testing this new function</h1>
     </div>
   );
 }
