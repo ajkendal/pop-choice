@@ -13,7 +13,7 @@ A Scrimba-inspired project built with **React + Vite**, **Supabase**, **Cloudfla
 - AI summaries via OpenAI
 - Fast, modern UI with React + Vite and SCSS Modules
 - Flexible deployment with **Vercel** for frontend hosting
-- **Figma** for design collaboration and UI prototyping
+- **Figma** for design collaboration and UI prototyping [Figma File](https://www.figma.com/design/v7vyKvGJOjBieBdiP7TXBY/PopChoice?node-id=0-1&t=XMeGa25fXxi4bTPL-1)
 
 ---
 
