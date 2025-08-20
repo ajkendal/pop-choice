@@ -29,9 +29,11 @@ const SuccessPage = (props: any) => {
       const movies = await fetchTMDBMovies({ year, title });
 
       setMovieSelection({
-        title: title ?? '',
-        description: movieRecommendations.content,
-        year: year ?? '',
+        title: title ?? movies.results[0].title,
+        description: title
+          ? movieRecommendations.content
+          : movies.results[0].overview,
+        year: year ?? movies.results[0].release_date.split('-')[0],
         poster: `https://image.tmdb.org/t/p/original${movies.results[0].poster_path}`,
       });
     };
