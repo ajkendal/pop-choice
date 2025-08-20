@@ -1,8 +1,11 @@
+import styles from './Header.module.scss';
+
 const Header = () => {
   return (
-    <>
-      <h1>PopChoice: Amanda J Kendal-Brown</h1>
-    </>
+    <header className={styles['header']}>
+      <img src='/static/images/PopChoice_icon.png' alt='PopChoice Icon' />
+      <h1 className={styles['header-text']}>PopChoice</h1>
+    </header>
   );
 };
 
