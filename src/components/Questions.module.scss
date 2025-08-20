@@ -1,0 +1,74 @@
+@use 'sass:color';
+
+.label {
+  display: inline-block;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0px;
+  font-weight: 400;
+  margin: 8px 0 !important;
+}
+
+.txt-input {
+  background-color: #3b4877;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  height: 100px;
+  font-size: 14px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #ffffff;
+  }
+}
+
+.split-section {
+  margin-bottom: 20px;
+}
+
+.btn-section {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  button {
+    background-color: #3b4877;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px 12px;
+    font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: color.scale(#3b4877, $lightness: -15%);
+    }
+    &.active {
+      background-color: #51e08a;
+      color: #000c36;
+      &:hover {
+        background-color: color.scale(#51e08a, $lightness: -15%);
+      }
+    }
+  }
+}
+
+.submit-button {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  color: #000c36;
+  background-color: #51e08a;
+  font-size: 30px;
+  letter-spacing: 0px;
+  padding: 15px 0;
+  border-radius: 10px;
+  &:hover {
+    background-color: color.scale(#51e08a, $lightness: -15%);
+  }
+}
